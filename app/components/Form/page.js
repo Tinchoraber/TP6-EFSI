@@ -53,7 +53,7 @@ export default function Form({ setCitas, citas }) {
             <input type="time" name="hora" className={styles.input} placeholder="Nombre Mascota" defaultValue=""/>
             <label className={styles.label}>Sintomas</label>
             <textarea name="sintomas" className={styles.textarea}></textarea>
-            <button type="submit" className={styles.button}>Agregar Cita</button>
+            <button type="submit" className={styles.button}>AGREGAR CITA</button>
         </form>
     )
 }

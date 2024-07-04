@@ -9,10 +9,27 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 100%;
-    padding: 1rem;
+    width: 50vw;
 }
-.input{
+.input {
     padding: .5rem;
     width: 50%;
+}
+.textarea{
+    padding: .5rem;
+    width: 50%;
+    height: 100px;
+}
+
+.button{
+    width: 30%;
+    padding: .5rem;
+    background-color: rgb(69, 164, 243);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
