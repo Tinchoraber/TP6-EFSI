@@ -1,0 +1,48 @@
+.section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .profile {
+    width: 45%;
+    padding: 20px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .profile p {
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .extraInfo {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 20px;
+  }
+  
+  .extraInfo h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .extraInfo p {
+    line-height: 1.6;
+    color: #666;
+  }
+  

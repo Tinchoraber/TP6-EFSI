@@ -10,7 +10,7 @@ export default function Reservas() {
    const [citas, setCitas] = useState([]);
    return (
     <>
-        <Titulo texto="ADMINISTRADOR DE PACIENTES" />
+        <Titulo texto="Reservas" />
         <div className={`${styles.divGeneral}`}>
         <div className={`${styles.padre}`}>
         <Subtitulo texto="CREAR MI CITA"></Subtitulo>
