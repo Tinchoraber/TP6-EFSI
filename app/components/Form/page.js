@@ -43,15 +43,25 @@ export default function Form({ setCitas, citas }) {
 
     return (
         <form onSubmit={agregarCita} className={styles.formulario}>
+            <div className={styles.divChico}>
             <label className={styles.label}>Nombre Mascota</label>
+            </div>
             <input type="text" name="mascota" className={styles.input} placeholder="Nombre Mascota" defaultValue=""/>
+            <div className={styles.divChico}>
             <label className={styles.label}>Nombre Dueño</label>
-            <input type="text" name="propietario" className={styles.input} placeholder="Nombre Mascota" defaultValue=""/>
+            </div>
+            <input type="text" name="propietario" className={styles.input} placeholder="Nombre Dueño" defaultValue=""/>
+            <div className={styles.divChico}>
             <label className={styles.label}>Fecha</label>
-            <input type="date" name="fecha" className={styles.input} placeholder="Nombre Mascota" defaultValue=""/>
+            </div>
+            <input type="date" name="fecha" className={styles.input} placeholder="Fecha" defaultValue=""/>
+            <div className={styles.divChico}>
             <label className={styles.label}>Hora</label>
-            <input type="time" name="hora" className={styles.input} placeholder="Nombre Mascota" defaultValue=""/>
+            </div>
+            <input type="time" name="hora" className={styles.input} placeholder="Hora" defaultValue=""/>
+            <div className={styles.divChico}>
             <label className={styles.label}>Sintomas</label>
+            </div>
             <textarea name="sintomas" className={styles.textarea}></textarea>
             <button type="submit" className={styles.button}>AGREGAR CITA</button>
         </form>

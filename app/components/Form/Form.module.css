@@ -22,14 +22,20 @@
 }
 
 .button{
-    width: 30%;
+    width: 50%;
+    box-sizing: border-box;
     padding: .5rem;
     background-color: rgb(69, 164, 243);
     border: 0;
     border-radius: 5px;
     color: white;
     font-weight: bold;
+}
+
+.divChico{
+    width: 50%;
+}
+.divChico label{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
 }
