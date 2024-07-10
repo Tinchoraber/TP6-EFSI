@@ -7,11 +7,11 @@ import Listado from "../components/Listado/page.js";
 import { useEffect, useState } from 'react';
 
 export default function Reservas() {
-   const [citas, setCitas] = useState(localStorage.getItem("jorge") ? JSON.parse(localStorage.getItem("jorge")) : []); //localStorage.getItem(citas);
+   const [citas, setCitas] = useState(localStorage.getItem("citas") ? JSON.parse(localStorage.getItem("citas")) : []); //localStorage.getItem(citas);
 
    useEffect(() => {
     if (citas?.length) {
-      localStorage.setItem("jorge", JSON.stringify(citas));
+      localStorage.setItem("citas", JSON.stringify(citas));
     }
    }, [citas]);
 
