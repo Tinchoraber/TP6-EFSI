@@ -4,13 +4,20 @@ import Titulo from "../components/Titulo/page.js";
 import Subtitulo from "../components/SubTitulo/page.js";
 import Form from "../components/Form/page.js";
 import Listado from "../components/Listado/page.js";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Reservas() {
-   const [citas, setCitas] = useState([]);
+   const [citas, setCitas] = useState(localStorage.getItem("jorge") ? JSON.parse(localStorage.getItem("jorge")) : []); //localStorage.getItem(citas);
+
+   useEffect(() => {
+    if (citas?.length) {
+      localStorage.setItem("jorge", JSON.stringify(citas));
+    }
+   }, [citas]);
+
    return (
     <>
-        <Titulo texto="Reservas" />
+        <Titulo texto="Reservas"/>
         <div className={`${styles.divGeneral}`}>
         <div className={`${styles.padre}`}>
         <Subtitulo texto="CREAR MI CITA"></Subtitulo>
