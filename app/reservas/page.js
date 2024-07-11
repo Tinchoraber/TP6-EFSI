@@ -1,4 +1,5 @@
-"use client";  
+"use client";
+
 import styles from "./reservas.module.css";
 import Titulo from "../components/Titulo/page.js";
 import Subtitulo from "../components/SubTitulo/page.js";
@@ -7,7 +8,13 @@ import Listado from "../components/Listado/page.js";
 import { useEffect, useState } from 'react';
 
 export default function Reservas() {
-   const [citas, setCitas] = useState(localStorage.getItem("citas") ? JSON.parse(localStorage.getItem("citas")) : []); //localStorage.getItem(citas);
+   const [citas, setCitas] = useState([]); //localStorage.getItem(citas);
+
+    useEffect(() => {
+      if (localStorage.getItem("citas")) {
+        setCitas(JSON.parse(localStorage.getItem("citas")));
+      } 
+    }, [])
 
    useEffect(() => {
     if (citas?.length) {
